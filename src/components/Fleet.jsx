@@ -57,7 +57,7 @@ export default function Fleet() {
               className="group bg-[#111827] border border-gray-800 rounded-sm overflow-hidden hover:border-amber-500/40 hover:-translate-y-1 transition-all duration-300 transform-gpu"
             >
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-56 overflow-hidden transform-gpu">
                 <img
                   src={image}
                   alt={name}
