@@ -39,14 +39,14 @@ export default function Location() {
         <div className="absolute top-0 left-0 right-0 h-px bg-amber-500/40 z-20 pointer-events-none" />
 
         {/* Floating info card — bottom-left */}
-        <div className="absolute bottom-10 left-4 sm:left-8 z-20 w-72 sm:w-80 bg-[#0f0f0f]/90 border border-gray-800 backdrop-blur-md rounded-sm p-6 shadow-2xl shadow-black/60">
+        <div className="absolute bottom-10 left-4 sm:left-8 z-20 w-auto sm:w-80 bg-[#0f0f0f]/90 border border-gray-800 backdrop-blur-md rounded-sm p-3 sm:p-6 shadow-2xl shadow-black/60">
           {/* Label */}
-          <p className="text-amber-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-3">
+          <p className="text-amber-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-2 sm:mb-3">
             Find Us Here
           </p>
 
           {/* Address row */}
-          <div className="flex items-start gap-3 mb-4">
+          <div className="flex items-start gap-3 mb-3 sm:mb-4">
             <div className="w-8 h-8 bg-amber-500/10 border border-amber-500/20 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
               <MapPin className="w-4 h-4 text-amber-500" />
             </div>
@@ -55,12 +55,12 @@ export default function Location() {
                 4820 Brighton Blvd
               </p>
               <p className="text-gray-400 text-sm">Denver, CO 80216</p>
-              <p className="text-gray-500 text-xs mt-0.5">RiNo / Brighton Blvd Corridor</p>
+              <p className="hidden sm:block text-gray-500 text-xs mt-0.5">RiNo / Brighton Blvd Corridor</p>
             </div>
           </div>
 
-          {/* Hours row */}
-          <div className="flex items-start gap-3 mb-5 pb-5 border-b border-gray-800">
+          {/* Hours row — hidden on mobile */}
+          <div className="hidden sm:flex items-start gap-3 mb-5 pb-5 border-b border-gray-800">
             <div className="w-8 h-8 bg-amber-500/10 border border-amber-500/20 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
               <Clock className="w-4 h-4 text-amber-500" />
             </div>
