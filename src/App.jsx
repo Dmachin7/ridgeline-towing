@@ -6,6 +6,7 @@ import Fleet from './components/Fleet'
 import Testimonials from './components/Testimonials'
 import About from './components/About'
 import Contact from './components/Contact'
+import Location from './components/Location'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Testimonials />
         <About />
         <Contact />
+        <Location />
       </main>
       <Footer />
     </div>
